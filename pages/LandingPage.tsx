@@ -351,6 +351,43 @@ const LandingPage: React.FC = () => {
           </div>
         </section>
 
+        {/* ═══════ FREELANCE PROJECTS — GH₵20,000 Per Student ═══════ */}
+        <section className="py-16 md:py-20 bg-white border-b border-slate-200">
+          <div className="max-w-5xl mx-auto px-5">
+            <div className="reveal text-center mb-10">
+              <p className="text-orange-500 text-xs font-mono uppercase tracking-widest mb-3">Freelance Opportunity</p>
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 tracking-tight mb-4">Every Student Gets Access to<br/><span className="text-orange-600">GH₵20,000 Worth of Freelance Projects</span></h2>
+              <p className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto">We don't just teach you — we connect you with real paying clients. Every enrolled student receives freelance project opportunities worth at least GH₵20,000.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {[
+                { title: 'Residential Interior Renders', value: 'GH₵5,000', desc: 'Complete bedroom, living room & kitchen 3D renders for real estate developers in Accra.' },
+                { title: 'Commercial Office Design', value: 'GH₵7,000', desc: 'Full office layout + photorealistic presentations for corporate clients across Ghana.' },
+                { title: 'Villa Exterior Visualization', value: 'GH₵8,000', desc: 'Luxury villa exterior renders with landscaping for high-net-worth property owners.' },
+              ].map((project, i) => (
+                <div key={i} className="reveal bg-gradient-to-br from-orange-50 to-white border border-orange-200 rounded-2xl p-6 shadow-soft hover:border-orange-400 transition-all">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-2xl">💼</span>
+                    <span className="text-orange-600 font-black text-lg">{project.value}</span>
+                  </div>
+                  <h3 className="font-bold text-slate-900 text-base mb-2">{project.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{project.desc}</p>
+                  <div className="mt-3 pt-3 border-t border-orange-100 flex items-center gap-2">
+                    <CheckCircle size={14} className="text-orange-500" />
+                    <span className="text-xs font-bold text-orange-700">Available to all enrolled students</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-full px-5 py-2.5">
+                <span className="text-sm font-bold text-orange-900">Total Project Value Per Student: <span className="text-orange-600">GH₵20,000+</span></span>
+              </div>
+              <p className="text-xs text-slate-500 mt-3">Projects are assigned based on your skill level after course completion. Our team matches you with real clients.</p>
+            </div>
+          </div>
+        </section>
+
         {/* 7. WHAT YOU GET — The Offer */}
         <section className="py-16 md:py-20 bg-slate-50 border-y border-slate-200 grid-bg">
           <div className="max-w-5xl mx-auto px-5">
@@ -415,7 +452,7 @@ const LandingPage: React.FC = () => {
               <h2 className="text-3xl md:text-5xl font-serif italic text-slate-900 mb-8 leading-snug">"We believe every designer deserves restaurant-quality tools at street-food prices."</h2>
             </div>
             <div className="reveal space-y-6 text-slate-600 text-base md:text-lg leading-relaxed">
-              <p>Learning SketchUp, V-Ray, and D5 Render separately? That's <strong className="text-slate-900">$300+ in courses, months of confusion, and a dozen browser tabs</strong> you'll never close.</p>
+              <p>Learning SketchUp, V-Ray, and D5 Render separately? That's <strong className="text-slate-900">GH₵3,000+ in courses, months of confusion, and a dozen browser tabs</strong> you'll never close.</p>
               <p>We built this bundle because <strong className="text-orange-600">the rendering pipeline shouldn't be gatekept</strong>. Whether you're a student, a freelancer, or a studio owner — you deserve a clear, guided path from 3D model to photorealistic render.</p>
               <p>Every lesson is designed so you build <strong className="text-slate-900">real projects</strong>. Not theory. Not fluff. Actual rooms, actual renders, actual portfolio pieces.</p>
               

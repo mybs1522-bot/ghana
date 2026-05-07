@@ -25,7 +25,7 @@ const RAW_COURSES: Course[] = [
     learningPoints: [
       'Master realistic sunlight, night lighting & shadows',
       'Create materials that look like real wood, glass & stone',
-      'Produce beauty shots that sell $5,000 projects'
+      'Produce beauty shots that sell GH₵20,000 projects'
     ],
     workflowImpact: 'Sell your design before it exists.'
   },
@@ -353,54 +353,54 @@ export const PRICING_PLANS = [
     id: 'lifetime-basic',
     duration: 'Lifetime Access',
     period: 'One-time payment',
-    price: '$9',
-    originalPrice: '$99',
+    price: 'GH₵150',
+    originalPrice: 'GH₵990',
     label: 'Best Value'
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'James Carter',
+    name: 'Kwaku Boateng',
     role: 'Senior Architect',
-    location: 'New York, USA',
-    content: 'Having SketchUp, V-Ray and D5 Render in one bundle changed how our entire studio works. We model, render, and present — all from this $9 course.'
+    location: 'Accra, Ghana',
+    content: 'Having SketchUp, V-Ray and D5 Render in one bundle changed how our entire studio works. We model, render, and present — all from this GH₵150 course.'
   },
   {
-    name: 'Sophie Laurent',
+    name: 'Abena Owusu',
     role: '3D Visualizer',
-    location: 'London, UK',
+    location: 'Kumasi, Ghana',
     content: 'The SketchUp-to-V-Ray pipeline is so well taught. D5 Render AI lets me do real-time walkthroughs in client meetings. My close rate doubled.'
   },
   {
-    name: 'Emma Rodriguez',
+    name: 'Yaw Mensah',
     role: 'Freelance Designer',
-    location: 'Los Angeles, USA',
+    location: 'Takoradi, Ghana',
     content: 'I went from flat 2D drawings to photorealistic V-Ray renders in 2 weeks. Built my entire freelance portfolio from these 3 courses. Now I charge 3x more.'
   },
   {
-    name: 'Daniel Chen',
+    name: 'Ama Darko',
     role: 'Architecture Student',
-    location: 'Toronto, Canada',
+    location: 'Cape Coast, Ghana',
     content: 'SketchUp + V-Ray + D5 Render AI — this pipeline is what firms actually use. I was the only student who knew all three. Landed my dream internship immediately.'
   },
   {
-    name: 'Olivia Brooks',
+    name: 'Kofi Agyemang',
     role: 'Interior Designer',
-    location: 'Sydney, Australia',
-    content: 'I can model a room in SketchUp, render it in V-Ray, and show 10 variations in D5 — all in the time it used to take for one basic drawing. Best $9 ever.'
+    location: 'Tema, Ghana',
+    content: 'I can model a room in SketchUp, render it in V-Ray, and show 10 variations in D5 — all in the time it used to take for one basic drawing. Best GH₵150 ever.'
   },
   {
-    name: 'Marco Rossi',
+    name: 'Efua Ansah',
     role: 'Landscape Architect',
-    location: 'Milan, Italy',
+    location: 'East Legon, Accra',
     content: 'D5 Render AI for real-time changes during meetings, V-Ray for portfolio-grade shots, SketchUp for the foundation. This bundle covers everything.'
   }
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "What exactly do I get for $9?",
+    question: "What exactly do I get for GH₵150?",
     answer: "You get 3 complete courses: SketchUp Pro (3D modeling), V-Ray Photorealism (beauty shots), and D5 Render AI (real-time AI rendering). Plus 10,000+ textures, 2,000+ 3D models, all software links, a certified diploma, and 24/7 team support. Lifetime access."
   },
   {
@@ -422,5 +422,9 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Is there a refund policy?",
     answer: "Yes, 100% money-back guarantee within 7 days if you're not satisfied. No questions asked."
+  },
+  {
+    question: "Can I pay with Mobile Money?",
+    answer: "Yes! We accept MTN Mobile Money, Vodafone Cash, AirtelTigo Money, and all major bank cards. Payment is in GHS."
   }
 ];

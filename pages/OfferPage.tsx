@@ -24,7 +24,7 @@ const OfferPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if ((window as any).fbq) (window as any).fbq("track", "ViewContent", { content_name: "Avada Books Upsell", value: UPSELL2_PRICE, currency: "USD" });
+    if ((window as any).fbq) (window as any).fbq("track", "ViewContent", { content_name: "Avada Books Upsell", value: UPSELL2_PRICE, currency: "GHS" });
   }, []);
 
   // 15-minute countdown timer (resets on page load)
@@ -47,7 +47,7 @@ const OfferPage: React.FC = () => {
   const f = (v: number) => v.toString().padStart(2, "0");
 
   const handleSuccess = (productMode: 'books' | 'downsell') => {
-    if ((window as any).fbq) (window as any).fbq("track", "Purchase", { value: productMode === 'downsell' ? DOWNSELL_BOOKS_PRICE : UPSELL2_PRICE, currency: "USD" });
+    if ((window as any).fbq) (window as any).fbq("track", "Purchase", { value: productMode === 'downsell' ? DOWNSELL_BOOKS_PRICE : UPSELL2_PRICE, currency: "GHS" });
     sendStageEmail(email, productMode);
     setPaymentSuccess(true);
   };
@@ -367,7 +367,7 @@ const OfferPage: React.FC = () => {
             <button onClick={() => setIsConfirmingSkip(false)} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><X size={20}/></button>
             <h4 className="text-orange-900 font-black text-2xl mb-2 mt-4">Wait! What if you only took our bestsellers?</h4>
             <p className="text-gray-800 text-sm mb-6 font-medium leading-relaxed">
-              If the full bundle is too much right now, you can get <strong className="text-gray-900">just the Kitchen & Bedroom Design Books</strong> for only ${DOWNSELL_BOOKS_PRICE}. You can always add the other 4 books later for $24.
+              If the full bundle is too much right now, you can get <strong className="text-gray-900">just the Kitchen & Bedroom Design Books</strong> for only GH₵{DOWNSELL_BOOKS_PRICE * 10}. You can always add the other 4 books later for GH₵240.
             </p>
             <div className="space-y-3">
               <button
@@ -375,7 +375,7 @@ const OfferPage: React.FC = () => {
                 onClick={executeDownsell}
                 className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 shadow-xl shadow-emerald-500/20 text-white font-bold text-lg rounded-xl transition-all"
               >
-                {isProcessingDownsell ? "Processing..." : `Yes, add the 2 books for $${DOWNSELL_BOOKS_PRICE}`}
+                {isProcessingDownsell ? "Processing..." : `Yes, add the 2 books for GH₵${DOWNSELL_BOOKS_PRICE * 10}`}
               </button>
               <button
                 disabled={isProcessingDownsell || isProcessingUpSell}

@@ -76,7 +76,7 @@ const OnetimePage: React.FC = () => {
     }
     sessionStorage.setItem('checkout_fullname', fullName.trim());
     sessionStorage.setItem('checkout_email', email);
-    const selarUrl = `https://selar.com/coursesgh?quickcheckout=1&email=${encodeURIComponent(email)}&fullname=${encodeURIComponent(fullName.trim())}&currency=GHS`;
+    const selarUrl = `https://selar.com/xofm2g7c71?quickcheckout=1&email=${encodeURIComponent(email)}&fullname=${encodeURIComponent(fullName.trim())}&currency=GHS`;
     window.location.href = selarUrl;
   };
 
